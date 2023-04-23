@@ -1,0 +1,42 @@
+package b_review;
+
+public class CalculatorExpr {	//객체화된 클래스
+	
+	//member fields
+	private int num1;
+	private int num2;
+	
+	
+	//member methods
+	public int getAddition() {
+		return num1 + num2;
+	}
+	public int getSubstraction() {
+		return num1 - num2;
+	}
+	public int getMultiplication() {
+		return num1 * num2;
+	}
+	public double getDivision() {
+		return (double)num1 / num2;
+	}
+	
+	//setter, getter
+	public int getNum1() {
+		return num1;
+	}
+	public void setNum1(int num1) {
+		this.num1 = num1;
+	}
+	public int getNum2() {
+		return num2;
+	}
+	public void setNum2(int num2) {
+		this.num2 = num2;
+	}
+
+	public String toString() {
+		return "덧셈: " + getAddition() + "\r\n" +  "뺄셈: " + getSubstraction() + "\r\n" + "곱셈: " + getMultiplication() + "\r\n" + "나눗셈: " + getDivision();
+	}
+
+}
